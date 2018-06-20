@@ -2,7 +2,6 @@
   Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
-
   You can refresh the page at any time to re-run all the tests.
 */
 
@@ -16,8 +15,12 @@
 
 //Code here
 
+let me = {
+  name:"your name",
+  age:"your age",
+}
 
-
+alert.name;
 ////////// PROBLEM 2 //////////
 
 /*
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+let favoriteThings = {
+  band:"kiss",
+  food:"pizza",
+  person:"brianna",
+  book:"outlier",
+  movie:"tron",
+  holiday:"halloween"
+};
 
 
 /*
@@ -35,14 +45,16 @@
 
 //Code here
 
-
+favoriteThings.car ="corvette";
+favoriteThings.brand ="chevrolet";
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,16 +68,19 @@
 */
 
 //Code here
+let backPack = {
 
-
-
+}
+let item = "firstPocket";
+backPack[item]="chapstick";
+backPack.color ="color";
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
 
-
+//alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -75,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -92,13 +107,14 @@ var user2 = {
 
 /* 
   Let's say I, the user, decided to change my name and email address to the following:
-  name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'. 
+  name -> 'Tyler S. McGinnis' and email -> 'c'. 
   Make that change without modifying the original object code above.
 */
 
 //Code Here
 
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -120,17 +136,23 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {
 
+}
 
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
-
+//let obj = {
+//  alertHello: function () {
+//   alert.alerthello;
+// } 
+//}
+methodCollection.alertHello = function(){window.alert('hello')}
+methodCollection.logHello = function(){console.log('hello')}
 //Code Here
-
-
 
 /*
   Now call your alertHello and logHello methods.
@@ -138,8 +160,8 @@ var user2 = {
 
 //Code Here
 
-
-
+methodCollection.alertHello;
+methodCollection.logHello;
 ////////// PROBLEM 6 //////////
 
 /* 
@@ -148,6 +170,13 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name,birthday,ssn){
+
+return {
+  name,
+  birthday,
+  ssn};
+}
 
 
 
@@ -160,4 +189,13 @@ var user2 = {
 
 //Code Here
 
+
+
+function makeCard(){creditCard={
+  cardNumber: "123", 
+  expirationDate: "456", 
+  securityCode: "666"};
+
+return (creditCard);
+}
 
